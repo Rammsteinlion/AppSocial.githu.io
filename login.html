@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Login</title>
+</head>
+<body>
+
+     <div class="container">
+      <header>Login</header>
+      <form action="login.php" method="POST" autocomplete="off">
+        <div class="field email-field">
+            <div class="input-field">
+              <input type="email" name="email" autocomplete="off" autocomplete="nope" placeholder="Enter your email" class="email" />
+            </div>
+            <span class="error email-error">
+              <i class="bx bx-error-circle error-icon"></i>
+              <p class="error-text">Please enter a valid email</p>
+            </span>
+          </div>
+        <div class="field create-password">
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                autocomplete="off"
+                autocomplete="nope"
+                placeholder="Create password"
+                class="password"
+              />
+              <i class="bx bx-hide show-hide"></i>
+            </div>
+            <span class="error password-error">
+              <i class="bx bx-error-circle error-icon"></i>
+              <p class="error-text">
+                Please enter atleast 8 charatcer with number, symbol, small and
+                capital letter.
+              </p>
+            </span>
+          </div>
+        <div class="input-field button">
+          <input type="submit" value="Login in" />
+        </div>
+      </form>
+      <small class="text_account">¿No tienes una cuenta? <a href="index.html">Registrate Ahora</a></small>
+    </div>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
